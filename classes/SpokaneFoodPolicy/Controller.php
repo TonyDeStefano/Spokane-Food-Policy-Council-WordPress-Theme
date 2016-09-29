@@ -88,7 +88,7 @@ class Controller {
 
 	public function enqueue_admin_styles_and_scripts()
 	{
-		$this->enqueue_styles_and_scripts();
+		//$this->enqueue_styles_and_scripts();
 	}
 
 	public function editor_styles()
