@@ -45,7 +45,7 @@ $markup     = ( is_single() && $markup_opt || false === $markup_opt ) ? true : f
 
 			do_action( 'basic_before_more_link' ); ?>
 			<p class="more-link-box">
-				<a class="more-link" href="<?php the_permalink() ?>#more-<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php _e( 'Read more', 'ona-white-angus' ); ?></a>
+				<a class="more-link" href="<?php the_permalink() ?>#more-<?php the_ID(); ?>" title="<?php the_title_attribute(); ?>"><?php _e( 'Read more', 'spokane-food-policy' ); ?></a>
 			</p>
 			<?php do_action( 'basic_after_more_link' );
 

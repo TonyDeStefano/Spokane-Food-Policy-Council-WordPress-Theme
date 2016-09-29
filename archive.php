@@ -11,22 +11,22 @@
 
 	<header class="inform">
 	<?php if (is_category()) : ?>
-		<h1><?php _e( 'Category', 'ona-white-angus' ); ?> &laquo;<?php single_cat_title(''); ?>&raquo;</h1>
+		<h1><?php _e( 'Category', 'spokane-food-policy' ); ?> &laquo;<?php single_cat_title(''); ?>&raquo;</h1>
 		<?php if ( $not_paged ) echo '<div class="archive-desc">'. category_description() .'</div>'; ?>
 	<?php elseif( is_tag() ) : ?>
-		<h1><?php _e( 'Tag', 'ona-white-angus' ); ?> &laquo;<?php single_tag_title(); ?>&raquo;</h1>
+		<h1><?php _e( 'Tag', 'spokane-food-policy' ); ?> &laquo;<?php single_tag_title(); ?>&raquo;</h1>
 		<?php if ( $not_paged ) echo '<div class="archive-desc">'. tag_description() .'</div>'; ?>
 	<?php elseif (is_day()) : ?>
-		<h1><?php _e( 'Day archives:', 'ona-white-angus' ); ?> <?php the_time('F jS, Y'); ?></h1>
+		<h1><?php _e( 'Day archives:', 'spokane-food-policy' ); ?> <?php the_time('F jS, Y'); ?></h1>
 	<?php elseif (is_month()) : ?>
-		<h1><?php _e( 'Monthly archives:', 'ona-white-angus' ); ?> <?php the_time('F, Y'); ?></h1>
+		<h1><?php _e( 'Monthly archives:', 'spokane-food-policy' ); ?> <?php the_time('F, Y'); ?></h1>
 	<?php elseif (is_year()) : ?>
-		<h1><?php _e( 'Year archives:', 'ona-white-angus' ); ?> <?php the_time('Y'); ?></h1>
+		<h1><?php _e( 'Year archives:', 'spokane-food-policy' ); ?> <?php the_time('Y'); ?></h1>
 	<?php elseif (is_author()) : ?>
-		<h1><?php _e( 'Author archives', 'ona-white-angus' ); ?></h1>
+		<h1><?php _e( 'Author archives', 'spokane-food-policy' ); ?></h1>
 		<div class="archive-desc"><?php the_author_meta('description'); ?></div>
 	<?php elseif (isset($_GET['paged']) && !empty($_GET['paged'])) : ?>
-		<h1 class="arhivetitle"><?php _e( 'Archive', 'ona-white-angus' ); ?></h1>
+		<h1 class="arhivetitle"><?php _e( 'Archive', 'spokane-food-policy' ); ?></h1>
  	<?php endif; ?>
 	</header>
 
@@ -38,15 +38,15 @@
 
 	the_posts_pagination( array(
 		'mid_size' => 2,
-		'prev_text' => __( '&laquo; Prev', 'ona-white-angus'),
-		'next_text' => __( 'Next &raquo;', 'ona-white-angus'),
+		'prev_text' => __( '&laquo; Prev', 'spokane-food-policy'),
+		'next_text' => __( 'Next &raquo;', 'spokane-food-policy'),
 	) );
 
 
 else: ?>
 		
 	<div class="post">
-		<h1><?php _e( 'Posts not found', 'ona-white-angus' ); ?></h1>
+		<h1><?php _e( 'Posts not found', 'spokane-food-policy' ); ?></h1>
 		<?php get_search_form(); ?>
 	 </div>
 		

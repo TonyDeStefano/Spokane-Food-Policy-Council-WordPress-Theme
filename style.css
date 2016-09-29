@@ -10,3 +10,72 @@
  * Text Domain: spokane-food-policy
  */
 
+h1, h2, h3, h4, h5 {
+   color: #72983E;
+}
+
+body {
+    background: #72983E;
+}
+
+.white-background {
+    background: #FFF;
+    box-shadow: 0 0 20px #000;
+}
+
+.sfp-header {
+    background: url('img/clouds.png') #cbe1ed repeat-x bottom;
+}
+
+.sfp-logo img {
+    margin: 10px 10px 0 10px;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.nav.navbar-nav > li {
+    border-radius: 5px;
+    line-height: 14px;
+    margin: 30px 5px 0 5px;
+    color: #FFF !important;
+}
+
+.nav.navbar-nav > li > a {
+    line-height: 14px;
+    color: #FFF !important;
+    min-width: 100px;
+    text-align: center;
+}
+
+.nav.navbar-nav > li:nth-child(5n+1) {
+    background-color: #749b3d;
+}
+
+.nav.navbar-nav > li:nth-child(5n+2) {
+    background-color: #917348;
+}
+
+.nav.navbar-nav > li:nth-child(5n+3) {
+    background-color: #e8ae19;
+}
+
+.nav.navbar-nav > li:nth-child(5n+4) {
+    background-color: #e2622d;
+}
+
+.nav.navbar-nav > li:nth-child(5n+5) {
+    background-color: #71646c;
+}
+
+.tomato-top {
+    background: url('img/tomato-top.png') no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 29px;
+    top: -25px;
+    left: 25px;
+}
