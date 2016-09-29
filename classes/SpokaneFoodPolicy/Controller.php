@@ -319,40 +319,6 @@ class Controller {
 		return $menu_items;
 	}
 
-	public function admin_menus()
-	{
-		add_menu_page( 'White Angus', 'White Angus', 'manage_options', 'sfp_white_angus', array( $this, 'print_settings_page' ), 'dashicons-awards' );
-		add_submenu_page( 'sfp_white_angus', 'General Settings', 'General Settings', 'manage_options', 'sfp_white_angus' );
-		add_submenu_page( 'sfp_white_angus', 'Homepage Boxes', 'Homepage Boxes', 'manage_options', 'sfp_white_angus_homepage_boxes', array( $this, 'print_homepage_boxes_page' ) );
-		add_submenu_page( 'sfp_white_angus', 'Hover Cow', 'Hover Cow', 'manage_options', 'sfp_white_angus_hover_cow', array( $this, 'print_hover_cow_page' ) );
-		add_submenu_page( 'sfp_white_angus', 'Members', 'Members', 'manage_options', 'sfp_white_angus_members', array( $this, 'print_members_page' ) );
-	}
-
-	public function print_settings_page()
-	{
-		include( dirname( dirname( __DIR__ ) ) . '/includes/settings.php' );
-	}
-
-	public function print_homepage_boxes_page()
-	{
-		include( dirname( dirname( __DIR__ ) ) . '/includes/homepage_boxes.php' );
-	}
-
-	public function print_hover_cow_page()
-	{
-		include( dirname( dirname( __DIR__ ) ) . '/includes/hover_cow.php' );
-	}
-
-	public function print_members_page()
-	{
-		include( dirname( dirname( __DIR__ ) ) . '/includes/members.php' );
-	}
-
-	public function register_settings()
-	{
-
-	}
-
 	public static function addHttp( $link )
 	{
 		if ( strlen( $link ) > 0 && strtolower( substr( $link, 0 , 4 ) ) != 'http' )
