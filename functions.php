@@ -15,4 +15,5 @@ add_action( 'admin_head', array( $sfp_controller, 'add_favicon' ) );
 if ( is_admin() )
 {
 	add_action( 'add_meta_boxes', array( $sfp_controller, 'page_layout_box' ) );
+	add_action( 'pre_post_update', array( $sfp_controller, 'save_custom_page_meta' ) );
 }

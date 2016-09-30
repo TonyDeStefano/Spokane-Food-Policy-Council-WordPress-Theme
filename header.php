@@ -20,9 +20,7 @@ global $sfp_controller;
 </head>
 <body <?php body_class(); ?>>
 
-<div class="containerggg">
-	<div class="col-sm-1"></div>
-	<div class="col-sm-10 white-background">
+<div class="sfp-container">
 
 		<div class="row sfp-header">
 			<div class="col-sm-4 text-center sfp-logo">

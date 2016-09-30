@@ -5,10 +5,12 @@ global $sfp_controller;
 
 ?>
 
-		</div>
-
 	</div>
-	<div class="col-sm-1 sfp-green-background"></div>
+</div>
+
+<div class="sfp-footer">
+	Copyright &copy; 2016<br>
+	Spokane Food Policy Council
 </div>
 
 <?php wp_footer(); ?>

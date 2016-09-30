@@ -18,9 +18,38 @@ body {
     background: #72983E;
 }
 
-.white-background {
+a {
+    color: #72983E;
+}
+
+.pledge {
+    border: 3px dashed #e2622d;
+    padding: 10px;
+    background: #ffcc66;
+}
+
+.sfp-well {
+    margin-top: 20px;
+}
+
+.sfp-container {
     background: #FFF;
     box-shadow: 0 0 20px #000;
+    margin-left: 40px;
+    margin-right: 40px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.sfp-container table td {
+    padding: 5px;
+    border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 480px) {
+    .sfp-container {
+        margin: 0;
+    }
 }
 
 .sfp-header {
@@ -78,4 +107,21 @@ body {
     height: 29px;
     top: -25px;
     left: 25px;
+}
+
+#widgetlist {
+    list-style: none;
+    padding: 0;
+}
+
+.wtitle {
+    color: #72983E;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.sfp-footer {
+    text-align: center;
+    color: #FFF;
+    margin-top: 20px;
 }
