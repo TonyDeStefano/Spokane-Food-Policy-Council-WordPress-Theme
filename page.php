@@ -54,11 +54,6 @@ global $sfp_controller;
 		<div class="col-md-4">
 			<div class="well sfp-well">
 				<?php get_sidebar(); ?>
-				<div class="text-center">
-					<a href="/real-food-pledge">
-						<img src="<?php bloginfo('template_directory'); ?>/img/real-food-pledge.png">
-					</a>
-				</div>
 			</div>
 		</div>
 	<?php } ?>
